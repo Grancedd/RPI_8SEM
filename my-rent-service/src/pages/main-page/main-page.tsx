@@ -265,3 +265,4 @@ function MainPage(): JSX.Element {
         </div>
     );
 }
+export default MainPage;
