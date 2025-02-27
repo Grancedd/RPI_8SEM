@@ -1,6 +1,7 @@
 import React from "react";
 import App from "./components/app/app";
 import ReactDOM from "react-dom/client";
+import { Setting } from "./const";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -8,6 +9,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App/>
+    <App
+      rentalOffersCount={Setting.rentOffersCount}/>
   </React.StrictMode>
 );

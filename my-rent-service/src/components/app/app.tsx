@@ -1,8 +1,13 @@
 import { JSX } from "react";
 import MainPage from "../../pages/main-page/main-page";
-function App(): JSX.Element {
+
+type AppMainPageProps = {
+    rentalOffersCount: number;
+}
+
+function App({rentalOffersCount}: AppMainPageProps): JSX.Element {
     return (
-        <MainPage/>
+        <MainPage rentalOffersCount={rentalOffersCount} />
     );
 }
 export default App;
