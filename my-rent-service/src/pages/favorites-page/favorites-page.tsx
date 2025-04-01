@@ -1,4 +1,6 @@
 import React, { JSX } from "react";
+import ReactDOM from "react-dom/client";
+import { Logo } from "../../components/logo/logo";
 
 function FavoritesPage(): JSX.Element {
   return (
@@ -7,6 +9,7 @@ function FavoritesPage(): JSX.Element {
         <div className="container">
           <div className="header__wrapper">
             <div className="header__left">
+              <Logo/>
             </div>
             <nav className="header__nav">
               <ul className="header__nav-list">
